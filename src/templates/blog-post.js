@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
+import Rating from "../components/rating"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -9,6 +10,7 @@ import { rhythm, scale } from "../utils/typography"
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
+  const { stars, comment, shouldAppearRating } = post.frontmatter.rating
   const { previous, next } = pageContext
 
   return (
@@ -44,6 +46,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           }}
         />
         <footer>
+          {shouldAppearRating? <Rating stars={stars} comment={comment} /> : null}
           <Bio />
         </footer>
       </article>
@@ -95,6 +98,11 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        rating {
+          stars, 
+          comment,
+          shouldAppearRating
+        }
       }
     }
   }

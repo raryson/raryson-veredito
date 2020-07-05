@@ -2,6 +2,11 @@
 title: Introdução
 date: "2020-07-05T22:12:03.284Z"
 description: "Explicando como funciona vai funcionar esse blog e também falando um pouco da minha vida"
+rating: {
+    comment: "Conteudo inutil aqui",
+    stars: 5,
+    shouldAppearRating: false
+}
 ---
 
 Eae gurizada, fico feliz em dizer que finalmente to começando a escrever uns posts sobre umas coisas aleatórias que como.

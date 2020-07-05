@@ -62,3 +62,15 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type Rating implements Node {
+      stars: Int
+      comment: String
+      shouldAppearRating: Boolean
+    }
+  `
+  createTypes(typeDefs)
+}
