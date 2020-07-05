@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `O Veredito do Raryson`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Raryshow`,
+      summary: `que mora em Gravataí e ta sempre se aventurando no mundo mágico da gastronomia`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Um blog que vai te falar as experiencias do Raryson no mundo da gastronomia de uma forma mal escrita e peculiar`,
+    siteUrl: `https://o-veredito-do-raryson.netlify.app`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `raryshow`,
     },
   },
   plugins: [
