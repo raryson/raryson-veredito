@@ -57,7 +57,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Feito pelo <strong>Raryshow</strong> {author.summary}
+        Feito pelo <strong>Raryson</strong> {author.summary}
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>
           Me segue lá irmão
